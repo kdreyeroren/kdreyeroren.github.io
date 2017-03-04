@@ -1,3 +1,26 @@
+@media screen and (max-width:640px) {
+  #travel .google-maps {
+    position: relative;
+    padding-bottom: 65.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+  #travel .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #call-reservation h2 {
+  	font-family: 'Open Sans', sans-serif;
+  	color: #fff;
+  	font-weight: 100;
+  	margin: 0;
+  }
+}
+
 body, html {
 	font-family: 'Raleway', sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -223,6 +246,7 @@ header .intro-text {
 #about .about-img {
 	display: inline-block;
 	position: relative;
+  max-width: 100%;
 }
 #about .about-img:before {
 	display: block;
@@ -233,6 +257,7 @@ header .intro-text {
 	bottom: 8px;
 	left: 8px;
 	border: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 100%;
 }
 #about p {
 	line-height: 24px;
@@ -252,6 +277,7 @@ header .intro-text {
 #restaurant-menu img {
 	width: 300px;
 	box-shadow: 15px 0 #a7c44c;
+  max-width: 100%;
 }
 #restaurant-menu h3 {
 	padding: 10px 0;
@@ -457,8 +483,36 @@ ol.type li a:hover {
 #travel .about-img {
 	display: inline-block;
 	position: relative;
+  max-width: 100%;
 }
 #travel .about-img:before {
+	display: block;
+	content: '';
+	position: relative;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 100%;
+}
+
+/* Registry */
+#about {
+	padding: 120px 0;
+}
+#about h3 {
+	font-size: 20px;
+}
+#about .about-text {
+	margin-left: 10px;
+}
+#about .about-img {
+	display: inline-block;
+	position: relative;
+  max-width: 100%;
+}
+#about .about-img:before {
 	display: block;
 	content: '';
 	position: absolute;
@@ -467,9 +521,14 @@ ol.type li a:hover {
 	bottom: 8px;
 	left: 8px;
 	border: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 100%;
+}
+#about p {
+	line-height: 24px;
+	margin: 15px 0 30px;
 }
 
-/* Registry */
+
 #registry {
 	color: #fff;
 	background: #444 url(../img/rose-garden-registry.jpg) center top no-repeat fixed;
@@ -493,14 +552,16 @@ ol.type li a:hover {
 }
 #registry img {
 	width: 280px;
+  max-width: 100%;
 }
 #registry .thumbnail {
 	background: transparent;
 	border: 0;
-}]
+}
 #registry .thumbnail .team-img {
 	display: inline-block;
 	position: relative;
+  max-width: 100%;
 }
 #registry .thumbnail .team-img:before {
 	display: block;
@@ -511,18 +572,13 @@ ol.type li a:hover {
 	bottom: 8px;
 	left: 8px;
 	border: 1px solid rgba(255, 255, 255, 0.2);
-}
-#registry .thumbnail .caption {
-	padding-top: 10px;
-}
-#registry .thumbnail .caption p {
-	color: rgba(255,255,255,0.7);
-	padding: 0 10px;
-	font-size: 15px;
+  max-width: 100%;
 }
 #registry .registry-about-text p {
 	margin-left: 10px;
   font-size: 24;
+  line-height: 24px;
+  text-align: left;
 }
 
 /* Call Reservation Section */
